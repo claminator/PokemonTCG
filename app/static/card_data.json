@@ -1,0 +1,171 @@
+{
+	"BS1044": {
+		"id": "BS1044",
+		"card_type": "Pokemon",
+		"card_subtype": "Basic",
+		"type": "G",
+		"name": "Bulbasaur", 
+		"hp": 40, 
+		"weakness": "F", 
+		"resistance": "", 
+		"retreat_cost": 1, 
+		"atk_1": {"atk_name": "Leech Seed", "atk_cost": "G G", "atk_dmg": 20, "atk_spec": "heal(10)"}
+		},
+	"BS1030": {
+		"id": "BS1030",
+		"card_type": "Pokemon",
+		"card_subtype": "Stage 1",
+		"evolves_from": "Bulbasaur",
+		"type": "G",
+		"name": "Ivysaur", 
+		"hp": 60, 
+		"weakness": "F", 
+		"resistance": "", 
+		"retreat_cost": 1, 
+		"atk_1": {"atk_name": "Vine Whip", "atk_cost": "G C C", "atk_dmg": 30, "atk_spec": ""}, 
+		"atk_2": {"atk_name": "Poisonpowder", "atk_cost": "G G G", "atk_dmg": 20, "atk_spec": "poison()"}
+		},
+	"BS1069": {
+		"id": "BS1069",
+		"card_type": "Pokemon",
+		"card_subtype": "Basic",
+		"type": "G",
+		"name": "Weedle", 
+		"hp": 40, 
+		"weakness": "F", 
+		"resistance": "", 
+		"retreat_cost": 1, 
+		"atk_1": {"atk_name": "Poison Sting", "atk_cost": "G", "atk_dmg": 10, "atk_spec": "flip(H=poison())"}
+		},
+	"BS1033": {
+		"id": "BS1033",
+		"card_type": "Pokemon",
+		"card_subtype": "Stage 1",
+		"evolves_from": "Weedle",
+		"type": "G",
+		"name": "Kakuna", 
+		"hp": 80, 
+		"weakness": "F", 
+		"resistance": "", 
+		"retreat_cost": 2, 
+		"atk_1": {"atk_name": "Stiffen", "atk_cost": "C C", "atk_dmg": 0, "atk_spec": "flip(H=protect())"}, 
+		"atk_2": {"atk_name": "Poisonpowder", "atk_cost": "G G", "atk_dmg": 20, "atk_spec": "flip(H=poison())"}
+		},
+	"BS1017": {
+		"id": "BS1017",
+		"card_type": "Pokemon",
+		"card_subtype": "Stage 2",
+		"evolves_from": "Kakuna",
+		"breeds_from": "Weedle",
+		"type": "G",
+		"name": "Beedrill", 
+		"hp": 80, 
+		"weakness": "F", 
+		"resistance": "H", 
+		"retreat_cost": 0, 
+		"atk_1": {"atk_name": "Twineedle", "atk_cost": "C C C", "atk_dmg": 0, "atk_spec": "flip(H=add_dmg(30), n=2)"}, 
+		"atk_2": {"atk_name": "Poison Sting", "atk_cost": "G G G", "atk_dmg": 40, "atk_spec": "flip(H=poison())"}
+		},
+	"BS1065": {
+		"id": "BS1065",
+		"card_type": "Pokemon",
+		"card_subtype": "Basic",
+		"type": "W",
+		"name": "Staryu", 
+		"hp": 40, 
+		"weakness": "E", 
+		"resistance": "", 
+		"retreat_cost": 1, 
+		"atk_1": {"atk_name": "Slap", "atk_cost": "W", "atk_dmg": 20, "atk_spec": ""}
+		},
+	"BS1064": {
+		"id": "BS1064",
+		"card_type": "Pokemon",
+		"card_subtype": "Stage 1",
+		"evolves_from": "Staryu",
+		"type": "W",
+		"name": "Starmie", 
+		"hp": 60, 
+		"weakness": "E", 
+		"resistance": "", 
+		"retreat_cost": 1, 
+		"atk_1": {"atk_name": "Recover", "atk_cost": "W W", "atk_dmg": 0, "atk_spec": "pay_energy(cost=['W'], eff=heal(60))"}, 
+		"atk_2": {"atk_name": "Star Freeze", "atk_cost": "W C C", "atk_dmg": 20, "atk_spec": "flip(H=paralyze())"}
+		},
+	"BS1035": {
+		"id": "BS1035",
+		"card_type": "Pokemon",
+		"card_subtype": "Basic",
+		"type": "W",
+		"name": "Magikarp", 
+		"hp": 30, 
+		"weakness": "E", 
+		"resistance": "", 
+		"retreat_cost": 1, 
+		"atk_1": {"atk_name": "Tackle", "atk_cost": "C", "atk_dmg": 10, "atk_spec": ""}, 
+		"atk_2": {"atk_name": "Flail", "atk_cost": "W", "atk_dmg": 0, "atk_spec": "add_dmg(self.dmg*10)"}
+		},
+	"BS1006": {
+		"id": "BS1006",
+		"card_type": "Pokemon",
+		"card_subtype": "Stage 1",
+		"evolves_from": "Magikarp",
+		"type": "W",
+		"name": "Gyarados", 
+		"hp": 100, 
+		"weakness": "G", 
+		"resistance": "H", 
+		"retreat_cost": 3, 
+		"atk_1": {"atk_name": "Dragon Rage", "atk_cost": "W W W", "atk_dmg": 50, "atk_spec": ""}, 
+		"atk_2": {"atk_name": "Bubblebeam", "atk_cost": "W W W W", "atk_dmg": 40, "atk_spec": "flip(H=paralyze())"}
+		},
+	"BS1091": {
+		"id": "BS1091",
+		"card_type": "Trainer",
+		"card_subtype": "Action",
+		"name": "Bill", 
+		"effect": "draw(2)"
+	},
+	"BS1093": {
+		"id": "BS1093",
+		"card_type": "Trainer",
+		"card_subtype": "Action",
+		"name": "Gust of Wind", 
+		"effect": "switch()"
+	},
+	"BS1094": {
+		"id": "BS1094",
+		"card_type": "Trainer",
+		"card_subtype": "Action",
+		"name": "Potion", 
+		"effect": "heal(20)"
+	},
+	"BS1090": {
+		"id": "BS1090",
+		"card_type": "Trainer",
+		"card_subtype": "Action",
+		"name": "Super Potion", 
+		"effect": "pay_energy(cost=['C'], eff=heal(40))"
+	},
+	"BS1095": {
+		"id": "BS1095",
+		"card_type": "Trainer",
+		"card_subtype": "Action",
+		"name": "Switch", 
+		"effect": "switch()"
+	},
+	"G": {
+		"id": "G",
+		"card_type": "Energy",
+		"card_subtype": "Basic Energy",
+		"type": "G",
+		"name": "Grass Energy"
+	},
+	"W": {
+		"id": "W",
+		"card_type": "Energy",
+		"card_subtype": "Basic Energy",
+		"type": "W",
+		"name": "Water Energy"
+	}
+}
