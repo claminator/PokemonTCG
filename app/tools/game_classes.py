@@ -2,7 +2,7 @@ import random
 import json
 import os
 
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(os.path.split(os.path.abspath(__file__))[0])
 
 with open(os.path.join(ROOT_DIR, 'static', 'card_data.json')) as card_data:
 	card_database = json.load(card_data)

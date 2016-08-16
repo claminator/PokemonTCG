@@ -7,7 +7,6 @@ def start_game(deck1, deck2):
 	'''
 	p1_deck = gc.Deck(deck1)
 	p2_deck = gc.Deck(deck2)
-	field = gc.PlayMat()
 
 	p1_hand = gc.Hand()
 	p2_hand = gc.Hand()
@@ -15,6 +14,7 @@ def start_game(deck1, deck2):
 	p1_hand.draw_hand(p1_deck)
 	p2_hand.draw_hand(p2_deck)
 
+	return p1_deck, p2_deck, p1_hand, p2_hand
 
 
 def dmg_calc():
