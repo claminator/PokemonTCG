@@ -132,35 +132,3 @@ class Hand(Deck):
 	def draw_hand(self, dest):
 		dest.move_cards(self,7)
 		self.mulligan(dest)
-
-
-
-class PlayMat(Deck):
-	
-	def __init__(self):
-		self.p1_actv = None
-		self.p1_bench1 = None
-		self.p1_bench2 = None
-		self.p1_bench3 = None
-		self.p1_bench4 = None
-		self.p1_bench5 = None
-		self.p1_prize1 = None
-		self.p1_prize2 = None
-		self.p1_prize3 = None
-		self.p1_prize4 = None
-		self.p1_prize5 = None
-		self.p1_prize6 = None
-
-		self.p2_actv = None
-		self.p2_bench1 = None
-		self.p2_bench2 = None
-		self.p2_bench3 = None
-		self.p2_bench4 = None
-		self.p2_bench5 = None
-		self.p2_prize1 = None
-		self.p2_prize2 = None
-		self.p2_prize3 = None
-		self.p2_prize4 = None
-		self.p2_prize5 = None
-		self.p2_prize6 = None
-
